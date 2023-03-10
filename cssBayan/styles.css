@@ -4,7 +4,7 @@ body {
 .tab input {display: none;}
 .meme-inside {display: none;}
 .tab {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     border: 1px solid darkgrey;
     border-radius: 5px;
