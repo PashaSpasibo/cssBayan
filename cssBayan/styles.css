@@ -40,9 +40,6 @@ h4 {
 
 .meme-inside {
     display: none;
-    max-height: 0vh;
-    transition: all 2s ease;
-
 }
 .tab :checked ~ .meme-inside {
     display: block;
@@ -52,12 +49,13 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 50%;
-    max-height: 0;
-    transition: all 1s ease;
+    width: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
 }
 .tab :checked + .image {
-    max-height: 100vh;
+    opacity: 0;
+    width: 50%;
     transition: all 0.5s ease;
 }
 
