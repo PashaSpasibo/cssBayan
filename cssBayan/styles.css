@@ -50,9 +50,6 @@ h4 {
     width: 50%;
 }
 @media(hover: hover){
-    div + .tab:hover {
-        
-    }
     .tab:hover {
         color: rgb(60, 65, 195);
     }
