@@ -6,7 +6,7 @@ body {
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 h1 {
     font-size: 2rem;
@@ -38,13 +38,11 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     width: 0%;
-    display: none;
-    transition: all 1s;
+    display: block;
+    transition: all 0.5s ease-out
 }
 .tab :checked ~ .image{
-    display: block;
     width: 50%;
-    transform: scale(1);
 }
 @media(hover: hover){
     div + .tab:hover {
@@ -54,8 +52,6 @@ h4 {
         color: rgb(60, 65, 195);
     }
     .tab:hover .image {
-        display: block;
         width: 50%;
-        transform: scale(1);
     }
 }
