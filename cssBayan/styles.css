@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(226, 210, 188);
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(45, 45, 45);
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tab input {display: none;}
+
+.meme-description {
+    cursor: pointer;
+    padding: 1rem;
+    display: block;
+}
+.meme-description::after {
+    content: '\02795';
+    float: right; 
+
+}
+.tab :checked~ .meme-description::after{
+    content: "\2796";
+}
+.meme-inside {
+    cursor: pointer;
+}
+.image{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0%;
+    display: block;
+    transition: all 1.5s ease-out;
+}
+.tab :checked ~ .image{
+    width: 50%;
+}
+@media(hover: hover){
+    .tab:hover {
+        color: rgb(60, 65, 195);
+    }
+    .tab:hover .image {
+        width: 50%;
+    }
+}
