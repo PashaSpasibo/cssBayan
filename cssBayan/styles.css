@@ -1,26 +1,29 @@
 body {
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(226, 210, 188);
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(45, 45, 45);
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 h1 {
+    font-size: 2rem;
     font-weight: bolder;
 }
+h3 {
+    font-size: 1.2rem;
+}
 h4 {
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 
 .tab input {display: none;}
-.meme-inside {display: none;}
-.tab {
-    font-size: large;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    background-color: rgb(150, 150, 150);
-    color: rgb(45, 45, 45);
-    margin-bottom: 1rem;
-}
+
 .meme-description {
-    padding: 2rem;
+    padding: 1rem;
     display: block;
 }
 .meme-description::after {
@@ -28,22 +31,31 @@ h4 {
     float: right; 
 
 }
-.tab :checked + .meme-description {
-    background-color: rgb(201, 201, 50);
-    border-radius: 0.5rem;
-    color: rgb(90, 90, 90);
-    margin-bottom: 1rem;
-}
-.tab :checked + .meme-description::after{
+.tab :checked~ .meme-description::after{
     content: "\2796";
-}
-.tab :checked ~ .meme-inside {
-
-    display: block;
 }
 .image{
     margin-left: auto;
     margin-right: auto;
+    width: 0%;
+    display: none;
+    transition: all 1s;
+}
+.tab :checked ~ .image{
     display: block;
     width: 50%;
+    transform: scale(1);
+}
+@media(hover: hover){
+    div + .tab:hover {
+        
+    }
+    .tab:hover {
+        color: rgb(60, 65, 195);
+    }
+    .tab:hover .image {
+        display: block;
+        width: 50%;
+        transform: scale(1);
+    }
 }
