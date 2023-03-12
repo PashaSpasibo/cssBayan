@@ -44,7 +44,7 @@ h4 {
     margin-right: auto;
     width: 0%;
     display: block;
-    transition: all 1.5s ease-out
+    transition: all 1.5s ease-out;
 }
 .tab :checked ~ .image{
     width: 50%;
